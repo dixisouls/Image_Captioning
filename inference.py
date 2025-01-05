@@ -56,8 +56,8 @@ def generate_caption(image_path):
     decoder = DecoderRNN(
         config.EMBEDDING_SIZE, config.HIDDEN_SIZE, len(vocab), config.NUM_LAYERS
     ).to(config.DEVICE)
-    encoder.load_state_dict(torch.load(f"{config.CHECKPOINT_DIR}/encoder-8.ckpt", map_location=torch.device('cpu')))
-    decoder.load_state_dict(torch.load(f"{config.CHECKPOINT_DIR}/decoder-8.ckpt", map_location=torch.device('cpu')))
+    encoder.load_state_dict(torch.load(f"{config.CHECKPOINT_DIR}/encoder-8.ckpt", map_location=config.DEVICE))
+    decoder.load_state_dict(torch.load(f"{config.CHECKPOINT_DIR}/decoder-8.ckpt", map_location=config.DEVICE))
 
     # Prepare image
     image = load_image(image_path, transform)
