@@ -76,8 +76,9 @@ def generate_caption(image_path):
         if word == "<end>":
             break
     sentence = " ".join(sampled_caption)
+    sentence = re.sub(r'<start>\s*|\s*<end>', '', sentence)
 
-    return re.sub(r'<start>\s*|\s*<end>', '', sentence)
+    return sentence.capitalize()
 
 
 if __name__ == "__main__":

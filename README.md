@@ -101,6 +101,7 @@ project/
 ├── config.py           # Configuration for dataset and model parameters
 ├── train.py            # Training pipeline for the model
 ├── inference.py        # Inference script to generate captions
+├── evaluate.py         # Evaluation script for BLEU scores
 ├── vocabulary.py       # Vocabulary builder and loader
 ├── data.py             # Custom dataset loader for Flicker32k
 ├── model.py            # Encoder and Decoder model definition
@@ -147,6 +148,14 @@ After training the model for 10 epochs:
 - Checkpoints for encoder and decoder models are saved in the `checkpoints/` directory.
 
 You can visualize results by running inference on test images.
+
+### Example Result:
+Below is an example of a generated caption for an image:
+
+![Example Image](test_images/test.jpg)
+
+**Generated Caption**: "A furry animal is looking at the camera ."
+
 
 ---
 
