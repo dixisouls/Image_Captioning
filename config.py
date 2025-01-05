@@ -39,6 +39,7 @@ class Config:
 
     # Vocabulary parameters
     VOCAB_THRESHOLD = 5
+    VOCAB_FILE = f"{CHECKPOINT_DIR}/vocab.pkl"
 
     # Logging parameters
     LOG_DIR = "logs/"

@@ -111,7 +111,7 @@ def get_vocab():
         Vocabulary: The vocabulary object.
     """
     config = Config()
-    vocab_path = f"{config.DATA_DIR}/vocab.pkl"
+    vocab_path = config.VOCAB_FILE
 
     if os.path.exists(vocab_path):
         with open(vocab_path, "rb") as f:
