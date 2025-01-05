@@ -96,7 +96,7 @@ The generated caption will be printed in the console.
 ---
 
 ## Project Structure
-
+```
 project/
 ├── config.py           # Configuration for dataset and model parameters
 ├── train.py            # Training pipeline for the model
@@ -111,7 +111,7 @@ project/
 │   ├── vocab.pkl       # Saved vocabulary pickle file
 │   └── results.csv     # Captions file
 └── README.md           # Project README file
-
+```
 
 
 ---
